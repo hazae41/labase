@@ -185,7 +185,7 @@ Dark mode is automatic based on system, but you can also force it on a subtree w
 
 ```tsx
 function Example() {
-  return <main className="bg-default">
+  return <main className="">
     <div className="bg-default">
       This will depend on the system
     </div>
