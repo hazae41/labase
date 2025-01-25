@@ -1,0 +1,27 @@
+@utility ml-safe {
+  margin-left: env(safe-area-inset-left);
+}
+
+@utility mr-safe {
+  margin-right: env(safe-area-inset-right);
+}
+
+@utility mb-safe {
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+@utility mt-safe {
+  margin-top: env(safe-area-inset-top);
+}
+
+@utility my-safe {
+  @apply mt-safe mb-safe;
+}
+
+@utility mx-safe {
+  @apply ml-safe mr-safe;
+}
+
+@utility m-safe {
+  @apply mx-safe my-safe;
+}

@@ -1,0 +1,287 @@
+@utility border-default {
+  @apply border-white;
+
+  @variant dark {
+    @apply border-black;
+  }
+}
+
+@utility border-opposite {
+  @apply border-black;
+
+  @variant dark {
+    @apply border-white;
+  }
+}
+
+@utility border-default-contrast {
+  @apply border-black/10;
+
+  @variant dark {
+    @apply border-white/15;
+  }
+}
+
+@utility border-opposite-contrast {
+  @apply border-white/85;
+
+  @variant dark {
+    @apply border-black/90;
+  }
+}
+
+@utility border-b-default {
+  @apply border-b-white;
+
+  @variant dark {
+    @apply border-b-black;
+  }
+}
+
+@utility border-l-default {
+  @apply border-l-white;
+
+  @variant dark {
+    @apply border-l-black;
+  }
+}
+
+@utility border-t-default {
+  @apply border-t-white;
+
+  @variant dark {
+    @apply border-t-black;
+  }
+}
+
+@utility border-r-default {
+  @apply border-r-white;
+
+  @variant dark {
+    @apply border-r-black;
+  }
+}
+
+@utility border-x-default {
+  @apply border-x-white;
+
+  @variant dark {
+    @apply border-x-black;
+  }
+}
+
+@utility border-y-default {
+  @apply border-y-white;
+
+  @variant dark {
+    @apply border-y-black;
+  }
+}
+
+@utility border-s-default {
+  @apply border-s-white;
+
+  @variant dark {
+    @apply border-s-black;
+  }
+}
+
+@utility border-e-default {
+  @apply border-e-white;
+
+  @variant dark {
+    @apply border-e-black;
+  }
+}
+
+@utility border-b-opposite {
+  @apply border-b-black;
+
+  @variant dark {
+    @apply border-b-white;
+  }
+}
+
+@utility border-l-opposite {
+  @apply border-l-black;
+
+  @variant dark {
+    @apply border-l-white;
+  }
+}
+
+@utility border-t-opposite {
+  @apply border-t-black;
+
+  @variant dark {
+    @apply border-t-white;
+  }
+}
+
+@utility border-r-opposite {
+  @apply border-r-black;
+
+  @variant dark {
+    @apply border-r-white;
+  }
+}
+
+@utility border-x-opposite {
+  @apply border-x-black;
+
+  @variant dark {
+    @apply border-x-white;
+  }
+}
+
+@utility border-y-opposite {
+  @apply border-y-black;
+
+  @variant dark {
+    @apply border-y-white;
+  }
+}
+
+@utility border-s-opposite {
+  @apply border-s-black;
+
+  @variant dark {
+    @apply border-s-white;
+  }
+}
+
+@utility border-e-opposite {
+  @apply border-e-black;
+
+  @variant dark {
+    @apply border-e-white;
+  }
+}
+
+@utility border-b-default-contrast {
+  @apply border-b-black/10;
+
+  @variant dark {
+    @apply border-b-white/15;
+  }
+}
+
+@utility border-l-default-contrast {
+  @apply border-l-black/10;
+
+  @variant dark {
+    @apply border-l-white/15;
+  }
+}
+
+@utility border-t-default-contrast {
+  @apply border-t-black/10;
+
+  @variant dark {
+    @apply border-t-white/15;
+  }
+}
+
+@utility border-r-default-contrast {
+  @apply border-r-black/10;
+
+  @variant dark {
+    @apply border-r-white/15;
+  }
+}
+
+@utility border-x-default-contrast {
+  @apply border-x-black/10;
+
+  @variant dark {
+    @apply border-x-white/15;
+  }
+}
+
+@utility border-y-default-contrast {
+  @apply border-y-black/10;
+
+  @variant dark {
+    @apply border-y-white/15;
+  }
+}
+
+@utility border-s-default-contrast {
+  @apply border-s-black/10;
+
+  @variant dark {
+    @apply border-s-white/15;
+  }
+}
+
+@utility border-e-default-contrast {
+  @apply border-e-black/10;
+
+  @variant dark {
+    @apply border-e-white/15;
+  }
+}
+
+@utility border-b-opposite-contrast {
+  @apply border-b-black/85;
+
+  @variant dark {
+    @apply border-b-white/90;
+  }
+}
+
+@utility border-l-opposite-contrast {
+  @apply border-l-black/85;
+
+  @variant dark {
+    @apply border-l-white/90;
+  }
+}
+
+@utility border-t-opposite-contrast {
+  @apply border-t-black/85;
+
+  @variant dark {
+    @apply border-t-white/90;
+  }
+}
+
+@utility border-r-opposite-contrast {
+  @apply border-r-black/85;
+
+  @variant dark {
+    @apply border-r-white/90;
+  }
+}
+
+@utility border-x-opposite-contrast {
+  @apply border-x-black/85;
+
+  @variant dark {
+    @apply border-x-white/90;
+  }
+}
+
+@utility border-y-opposite-contrast {
+  @apply border-y-black/85;
+
+  @variant dark {
+    @apply border-y-white/90;
+  }
+}
+
+@utility border-s-opposite-contrast {
+  @apply border-s-black/85;
+
+  @variant dark {
+    @apply border-s-white/90;
+  }
+}
+
+@utility border-e-opposite-contrast {
+  @apply border-e-black/85;
+
+  @variant dark {
+    @apply border-e-white/90;
+  }
+}

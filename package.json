@@ -1,0 +1,40 @@
+{
+  "type": "module",
+  "name": "@hazae41/labase",
+  "version": "0.0.0",
+  "description": "The Tailwind framework for monochrome apps",
+  "homepage": "https://github.com/hazae41/labase",
+  "repository": "github:hazae41/labase",
+  "author": "hazae41",
+  "license": "MIT",
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "./dist/esm",
+    "./dist/cjs",
+    "./dist/types"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && cp -r ./src ./dist"
+  },
+  "devDependencies": {
+    "@hazae41/rimraf": "^4.1.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.cjs"
+    }
+  },
+  "keywords": [
+    "monochrome",
+    "css",
+    "framework",
+    "tailwind",
+    "design",
+    "style"
+  ]
+}

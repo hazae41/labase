@@ -1,0 +1,31 @@
+@utility divide-default {
+  @apply divide-white;
+
+  @variant dark {
+    @apply divide-black;
+  }
+}
+
+@utility divide-opposite {
+  @apply divide-black;
+
+  @variant dark {
+    @apply divide-white;
+  }
+}
+
+@utility divide-default-contrast {
+  @apply divide-black/10;
+  
+  @variant dark {
+    @apply divide-white/15;
+  }
+}
+
+@utility divide-opposite-contrast {
+  @apply divide-black/85;
+
+  @variant dark {
+    @apply divide-white/90;
+  }
+}

@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@import "./padding/index.css";
+@import "./margin/index.css";
+@import "./animations/index.css";
+@import "./background/index.css";
+@import "./text/index.css";
+@import "./border/index.css";
+@import "./outline/index.css";
+@import "./divide/index.css";
+@import "./scrollbar/index.css";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: ui-rounded, system-ui, sans-serif;
+}
+
+html {
+  @apply h-full w-full;
+}
+
+body {
+  @apply h-full w-full text-base text-default bg-default overflow-hidden;
+}
+
+#__next {
+  @apply h-full w-full overflow-hidden;
+}
+
+::backdrop {
+  @apply bg-transparent;
+}

@@ -1,0 +1,31 @@
+@utility outline-default {
+  @apply outline-white;
+
+  @variant dark {
+    @apply outline-black;
+  }
+}
+
+@utility outline-opposite {
+  @apply outline-black;
+
+  @variant dark {
+    @apply outline-white;
+  }
+}
+
+@utility outline-default-contrast {
+  @apply outline-black/10;
+
+  @variant dark {
+    @apply outline-white/15;
+  }
+}
+
+@utility outline-opposite-contrast {
+  @apply outline-white/85;
+
+  @variant dark {
+    @apply outline-black/90;
+  }
+}

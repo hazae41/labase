@@ -1,0 +1,47 @@
+@utility text-default {
+  @apply text-black;
+
+  @variant dark {
+    @apply text-white;
+  }
+}
+
+@utility text-opposite {
+  @apply text-white;
+  
+  @variant dark {
+    @apply text-black;
+  }
+}
+
+@utility text-default-contrast {
+  @apply text-black/50;
+
+  @variant dark {
+    @apply text-white/50;
+  }
+}
+
+@utility text-opposite-contrast {
+  @apply text-white/50;
+
+  @variant dark {
+    @apply text-black/50;
+  }
+}
+
+@utility text-default-half-contrast {
+  @apply text-black/75;
+
+  @variant dark {
+    @apply text-white/75;
+  }
+}
+
+@utility text-opposite-half-contrast {
+  @apply text-white/75;
+
+  @variant dark {
+    @apply text-black/75;
+  }
+}

@@ -1,0 +1,51 @@
+@utility bg-backdrop {
+  @apply bg-neutral-500/50;
+}
+
+@utility bg-default {
+  @apply bg-white;
+
+  @variant dark {
+    @apply bg-black;
+  }
+}
+
+@utility bg-opposite {
+  @apply bg-black;
+
+  @variant dark {
+    @apply bg-white;
+  }
+}
+
+@utility bg-default-contrast {
+  @apply bg-black/[0.05];
+
+  @variant dark {
+    @apply bg-white/[0.075];
+  }
+}
+
+@utility bg-opposite-contrast {
+  @apply bg-black/[0.925];
+
+  @variant dark {
+    @apply bg-white/[0.95];
+  }
+}
+
+@utility bg-default-double-contrast {
+  @apply bg-black/[0.1];
+
+  @variant dark {
+    @apply bg-white/[0.15];
+  }
+}
+
+@utility bg-opposite-double-contrast {
+  @apply bg-black/[0.85];
+
+  @variant dark {
+    @apply bg-white/[0.9];
+  }
+}

@@ -1,0 +1,148 @@
+@keyframes opacity-in {
+  from {
+    opacity: 0%;
+  }
+}
+
+@keyframes opacity-out {
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0%);
+  }
+}
+
+@keyframes scale-out {
+  to {
+    transform: scale(0%);
+  }
+}
+
+@keyframes slideup-in {
+  from {
+    transform: translateY(calc(100vh));
+  }
+}
+
+@keyframes slideup-out {
+  to {
+    transform: translateY(calc(100vh));
+  }
+}
+
+@keyframes flip-in {
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-out {
+  from {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes scale-xy-in {
+  from {
+    opacity: 0%;
+    transform: scale(0%);
+    translate: calc(-50vw + var(--x)) calc(-50vh + var(--y));
+  }
+}
+
+@keyframes scale-xy-out {
+  to {
+    opacity: 0%;
+    transform: scale(0%);
+    translate: calc(-50vw + var(--x)) calc(-50vh + var(--y));
+  }
+}
+
+@keyframes scale-xywh-in {
+  from {
+    opacity: 0%;
+    transform: scale(0%);
+    translate: calc(var(--x) - (0.5 * var(--w))) calc(var(--y) - (0.5 * var(--h)));
+  }
+}
+
+@keyframes scale-xywh-out {
+  to {
+    opacity: 0%;
+    transform: scale(0%);
+    translate: calc(var(--x) - (0.5 * var(--w))) calc(var(--y) - (0.5 * var(--h)));
+  }
+}
+
+@keyframes vibrate-loop {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
+
+@utility animate-opacity-in {
+  animation: opacity-in 300ms ease-out;
+}
+
+@utility animate-opacity-out {
+  animation: opacity-out 300ms ease-in;
+}
+
+@utility animate-scale-in {
+  animation: scale-in 300ms ease-out;
+}
+
+@utility animate-scale-out {
+  animation: scale-out 300ms ease-in;
+}
+
+@utility animate-slideup-in {
+  animation: slideup-in 300ms ease-out;
+}
+
+@utility animate-slideup-out {
+  animation: slideup-out 300ms ease-in;
+}
+
+@utility animate-flip-in {
+  animation: flip-in 900ms ease-in-out;
+}
+
+@utility animate-flip-out {
+  animation: flip-out 900ms ease-in-out;
+}
+
+@utility animate-opacity-scale-in {
+  animation: opacity-in 300ms ease-out, scale 300ms ease-out;
+}
+
+@utility animate-opacity-scale-out {
+  animation: opacity-out 300ms ease-in, scale 300ms ease-in;
+}
+
+@utility animate-scale-xy-in {
+  animation: scale-xy-in 300ms ease-out;
+}
+
+@utility animate-scale-xy-out {
+  animation: scale-xy-out 300ms ease-in;
+}
+
+@utility animate-scale-xywh-in {
+  animation: scale-xywh-in 300ms ease-out;
+}
+
+@utility animate-scale-xywh-out {
+  animation: scale-xywh-out 300ms ease-in;
+}
+
+@utility animate-vibrate-loop {
+  animation: vibrate-loop 125ms ease-in-out infinite alternate;
+}

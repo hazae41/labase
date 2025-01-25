@@ -1,0 +1,4 @@
+@utility po-* {
+  padding-inline: calc(var(--spacing) * --value(integer) * 2);
+  padding-block: calc(var(--spacing) * --value(integer));
+}
