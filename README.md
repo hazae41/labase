@@ -160,3 +160,21 @@ function Example() {
   </div>
 }
 ```
+
+### Animations
+
+You can use animations such as
+
+- `animate-opacity-in` and `animate-opacity-out`
+
+- `animate-scale-in` and `animate-scale-out`
+
+- `animate-flip-in` and `animate-flip-out`
+
+- `animate-opacity-scale-in` and `animate-opacity-scale-in`
+
+- `animate-scale-xy-in` and `animate-scale-xy-out`
+
+- `animate-scale-xywh-in` and `animate-scale-xywh-out`
+
+- `animate-vibrate-loop`
