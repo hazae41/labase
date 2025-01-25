@@ -12,23 +12,10 @@
   "types": "./dist/types/index.d.ts",
   "sideEffects": false,
   "files": [
-    "./dist/esm",
-    "./dist/cjs",
-    "./dist/types"
+    "./src"
   ],
-  "scripts": {
-    "build": "rimraf ./dist && cp -r ./src ./dist",
-    "prepare": "npm run build"
-  },
-  "devDependencies": {
-    "@hazae41/rimraf": "^1.0.1"
-  },
   "exports": {
-    ".": {
-      "types": "./dist/types/index.d.ts",
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.cjs"
-    }
+    ".": {}
   },
   "keywords": [
     "monochrome",
