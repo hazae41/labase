@@ -10,8 +10,6 @@
 @import "./divide/index.css";
 @import "./scrollbar/index.css";
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
 html,
 body {
   font-size: 16px;
