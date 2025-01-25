@@ -10,6 +10,16 @@
 @import "./divide/index.css";
 @import "./scrollbar/index.css";
 
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    @slot;
+  }
+
+  &:where([data-theme=dark], [data-theme=dark] *) {
+    @slot;
+  }
+}
+
 html,
 body {
   font-size: 16px;
