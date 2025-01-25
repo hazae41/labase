@@ -178,3 +178,21 @@ You can use animations such as
 - `animate-scale-xywh-in` and `animate-scale-xywh-out`
 
 - `animate-vibrate-loop`
+
+### Dark mode
+
+Dark mode is automatic based on system, but you can also force it on a subtree with `data-theme="dark"`
+
+```tsx
+function Example() {
+  return <main className="bg-default">
+    <div className="bg-default">
+      This will depend on the system
+    </div>
+    <div className="bg-default"
+      data-theme="dark">
+      This will always be dark
+    </div>
+  </div>
+}
+```
