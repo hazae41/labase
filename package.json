@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@hazae41/labase",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "The Tailwind framework for monochrome apps",
   "homepage": "https://github.com/hazae41/labase",
   "repository": "github:hazae41/labase",
