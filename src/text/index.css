@@ -45,3 +45,19 @@
     @apply text-black/75;
   }
 }
+
+@utility text-white-contrast {
+  @apply text-white/50;
+}
+
+@utility text-black-contrast {
+  @apply text-black/50;
+}
+
+@utility text-white-half-contrast {
+  @apply text-white/75;
+}
+
+@utility text-black-half-contrast {
+  @apply text-black/75;
+}
