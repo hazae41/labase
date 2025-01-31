@@ -78,22 +78,6 @@
   }
 }
 
-@keyframes -scale-xywh-in {
-  from {
-    opacity: 0%;
-    transform: scale(0%);
-    translate: calc(-100vw + var(--x) + (0.5 * var(--w))) calc(var(--y) - (0.5 * var(--h)));
-  }
-}
-
-@keyframes -scale-xywh-out {
-  to {
-    opacity: 0%;
-    transform: scale(0%);
-    translate: calc(-100vw + var(--x) + (0.5 * var(--w))) calc(var(--y) - (0.5 * var(--h)));
-  }
-}
-
 @keyframes vibrate-loop {
   from {
     transform: rotate(-1deg);
@@ -157,14 +141,6 @@
 
 @utility animate-scale-xywh-out {
   animation: scale-xywh-out 300ms ease-in;
-}
-
-@utility -animate-scale-xywh-in {
-  animation: -scale-xywh-in 300ms ease-out;
-}
-
-@utility -animate-scale-xywh-out {
-  animation: -scale-xywh-out 300ms ease-in;
 }
 
 @utility animate-vibrate-loop {
