@@ -1,0 +1,7 @@
+@utility p-scroll {
+  @apply p-[3px];
+
+  @supports (-moz-appearance:none) {
+    @apply p-[1px];
+  }
+}
