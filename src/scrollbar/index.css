@@ -3,15 +3,15 @@
     scrollbar-color: rgba(0 0 0 / 0.1) transparent;
   }
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     @apply bg-white;
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-white;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
+  &::-webkit-scrollbar-thumb:hover {
     @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-white;
   }
 }
@@ -21,15 +21,15 @@
     scrollbar-color: rgba(255 255 255 / 0.1) transparent;
   }
 
-  ::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     @apply bg-black;
   }
 
-  ::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-black;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
+  &::-webkit-scrollbar-thumb:hover {
     @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-black;
   }
 }

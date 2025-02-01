@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  @apply h-full w-full text-base text-default bg-default scrollbar-default overflow-hidden;
+  @apply h-full w-full text-base text-default bg-default **:scrollbar-default overflow-hidden;
 }
 
 #__next {
