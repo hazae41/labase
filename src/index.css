@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss/index";
 
 @import "./padding/index.css";
 @import "./margin/index.css";
