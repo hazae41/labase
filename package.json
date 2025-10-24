@@ -9,9 +9,6 @@
   "files": [
     "./src"
   ],
-  "exports": {
-    ".": {}
-  },
   "keywords": [
     "monochrome",
     "css",
