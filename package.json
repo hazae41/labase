@@ -16,5 +16,8 @@
     "tailwind",
     "design",
     "style"
-  ]
+  ],
+  "dependencies": {
+    "tailwindcss": "^4.1.16"
+  }
 }
