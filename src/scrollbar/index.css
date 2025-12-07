@@ -4,15 +4,15 @@
   }
 
   &::-webkit-scrollbar {
-    @apply bg-white;
+    @apply bg-transparent;
   }
 
   &::-webkit-scrollbar-thumb {
-    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-white;
+    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-white;
+    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 }
 
@@ -22,15 +22,15 @@
   }
 
   &::-webkit-scrollbar {
-    @apply bg-black;
+    @apply bg-transparent;
   }
 
   &::-webkit-scrollbar-thumb {
-    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-black;
+    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-black;
+    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 }
 
