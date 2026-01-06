@@ -38,5 +38,5 @@ body {
 }
 
 ::backdrop {
-  @apply bg-backdrop;
+  @apply bg-transparent;
 }
