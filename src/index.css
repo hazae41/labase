@@ -22,21 +22,16 @@
 
 @layer base {
 
-  html,
-  body {
-    font-size: 16px;
-  }
-
-  body {
-    font-family: ui-rounded, system-ui, sans-serif;
-  }
-
   html {
-    @apply h-full w-full;
+    @apply h-full w-full text-base;
   }
 
   body {
     @apply h-full w-full text-base text-default bg-default **:scrollbar-default overflow-hidden;
+  }
+
+  body {
+    font-family: ui-rounded, system-ui, sans-serif;
   }
 
   ::backdrop {
