@@ -34,6 +34,10 @@
     font-family: ui-rounded, system-ui, sans-serif;
   }
 
+  ::selection {
+    @apply bg-default-double-contrast;
+  }
+
   ::backdrop {
     @apply bg-transparent;
   }
