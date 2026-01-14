@@ -19,33 +19,33 @@
 }
 
 @utility bg-default-contrast {
-  @apply bg-black/[0.05];
+  @apply bg-black/5;
 
   @variant dark {
-    @apply bg-white/[0.075];
+    @apply bg-white/10;
   }
 }
 
 @utility bg-opposite-contrast {
-  @apply bg-black/[0.925];
+  @apply bg-black/90;
 
   @variant dark {
-    @apply bg-white/[0.95];
+    @apply bg-white/95;
   }
 }
 
 @utility bg-default-double-contrast {
-  @apply bg-black/[0.1];
+  @apply bg-black/10;
 
   @variant dark {
-    @apply bg-white/[0.15];
+    @apply bg-white/20;
   }
 }
 
 @utility bg-opposite-double-contrast {
-  @apply bg-black/[0.85];
+  @apply bg-black/80;
 
   @variant dark {
-    @apply bg-white/[0.9];
+    @apply bg-white/90;
   }
 }

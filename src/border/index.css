@@ -18,12 +18,12 @@
   @apply border-black/10;
 
   @variant dark {
-    @apply border-white/15;
+    @apply border-white/20;
   }
 }
 
 @utility border-opposite-contrast {
-  @apply border-white/85;
+  @apply border-white/80;
 
   @variant dark {
     @apply border-black/90;
@@ -162,7 +162,7 @@
   @apply border-b-black/10;
 
   @variant dark {
-    @apply border-b-white/15;
+    @apply border-b-white/20;
   }
 }
 
@@ -170,7 +170,7 @@
   @apply border-l-black/10;
 
   @variant dark {
-    @apply border-l-white/15;
+    @apply border-l-white/20;
   }
 }
 
@@ -178,7 +178,7 @@
   @apply border-t-black/10;
 
   @variant dark {
-    @apply border-t-white/15;
+    @apply border-t-white/20;
   }
 }
 
@@ -186,7 +186,7 @@
   @apply border-r-black/10;
 
   @variant dark {
-    @apply border-r-white/15;
+    @apply border-r-white/20;
   }
 }
 
@@ -194,7 +194,7 @@
   @apply border-x-black/10;
 
   @variant dark {
-    @apply border-x-white/15;
+    @apply border-x-white/20;
   }
 }
 
@@ -202,7 +202,7 @@
   @apply border-y-black/10;
 
   @variant dark {
-    @apply border-y-white/15;
+    @apply border-y-white/20;
   }
 }
 
@@ -210,7 +210,7 @@
   @apply border-s-black/10;
 
   @variant dark {
-    @apply border-s-white/15;
+    @apply border-s-white/20;
   }
 }
 
@@ -218,12 +218,12 @@
   @apply border-e-black/10;
 
   @variant dark {
-    @apply border-e-white/15;
+    @apply border-e-white/20;
   }
 }
 
 @utility border-b-opposite-contrast {
-  @apply border-b-black/85;
+  @apply border-b-black/80;
 
   @variant dark {
     @apply border-b-white/90;
@@ -231,7 +231,7 @@
 }
 
 @utility border-l-opposite-contrast {
-  @apply border-l-black/85;
+  @apply border-l-black/80;
 
   @variant dark {
     @apply border-l-white/90;
@@ -239,7 +239,7 @@
 }
 
 @utility border-t-opposite-contrast {
-  @apply border-t-black/85;
+  @apply border-t-black/80;
 
   @variant dark {
     @apply border-t-white/90;
@@ -247,7 +247,7 @@
 }
 
 @utility border-r-opposite-contrast {
-  @apply border-r-black/85;
+  @apply border-r-black/80;
 
   @variant dark {
     @apply border-r-white/90;
@@ -255,7 +255,7 @@
 }
 
 @utility border-x-opposite-contrast {
-  @apply border-x-black/85;
+  @apply border-x-black/80;
 
   @variant dark {
     @apply border-x-white/90;
@@ -263,7 +263,7 @@
 }
 
 @utility border-y-opposite-contrast {
-  @apply border-y-black/85;
+  @apply border-y-black/80;
 
   @variant dark {
     @apply border-y-white/90;
@@ -271,7 +271,7 @@
 }
 
 @utility border-s-opposite-contrast {
-  @apply border-s-black/85;
+  @apply border-s-black/80;
 
   @variant dark {
     @apply border-s-white/90;
@@ -279,7 +279,7 @@
 }
 
 @utility border-e-opposite-contrast {
-  @apply border-e-black/85;
+  @apply border-e-black/80;
 
   @variant dark {
     @apply border-e-white/90;

@@ -18,12 +18,12 @@
   @apply outline-black/10;
 
   @variant dark {
-    @apply outline-white/15;
+    @apply outline-white/20;
   }
 }
 
 @utility outline-opposite-contrast {
-  @apply outline-white/85;
+  @apply outline-white/80;
 
   @variant dark {
     @apply outline-black/90;

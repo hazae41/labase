@@ -16,14 +16,14 @@
 
 @utility divide-default-contrast {
   @apply divide-black/10;
-  
+
   @variant dark {
-    @apply divide-white/15;
+    @apply divide-white/20;
   }
 }
 
 @utility divide-opposite-contrast {
-  @apply divide-black/85;
+  @apply divide-black/80;
 
   @variant dark {
     @apply divide-white/90;
