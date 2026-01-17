@@ -12,36 +12,36 @@
 
 @custom-variant light {
   @media (prefers-color-scheme: light) {
-    &:not(.opposite *, .dark *) {
+    &:not(.opposite, .dark, .opposite *, .dark *) {
       @slot;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    &:where(.opposite *) {
+    &:where(.opposite, .opposite *) {
       @slot;
     }
   }
 
-  &:where(.light *) {
+  &:where(.light, .light *) {
     @slot;
   }
 }
 
 @custom-variant dark {
   @media (prefers-color-scheme: dark) {
-    &:not(.opposite *, .light *) {
+    &:not(.opposite, .light, .opposite *, .light *) {
       @slot;
     }
   }
 
   @media (prefers-color-scheme: light) {
-    &:where(.opposite *) {
+    &:where(.opposite, .opposite *) {
       @slot;
     }
   }
 
-  &:where(.dark *) {
+  &:where(.dark, .dark *) {
     @slot;
   }
 }
