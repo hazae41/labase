@@ -12,36 +12,36 @@
 
 @custom-variant light {
   @media (prefers-color-scheme: light) {
-    &:not(.opposite, .dark, .opposite *, .dark *) {
+    &:not([data-theme="dark"], [data-theme="opposite"], [data-theme="dark"] *, [data-theme="opposite"] *) {
       @slot;
     }
   }
 
   @media (prefers-color-scheme: dark) {
-    &:where(.opposite, .opposite *) {
+    &:where([data-theme="opposite"], [data-theme="opposite"] *) {
       @slot;
     }
   }
 
-  &:where(.light, .light *) {
+  &:where([data-theme="light"], [data-theme="light"] *) {
     @slot;
   }
 }
 
 @custom-variant dark {
   @media (prefers-color-scheme: dark) {
-    &:not(.opposite, .light, .opposite *, .light *) {
+    &:not([data-theme="light"], [data-theme="opposite"], [data-theme="light"] *, [data-theme="opposite"] *) {
       @slot;
     }
   }
 
   @media (prefers-color-scheme: light) {
-    &:where(.opposite, .opposite *) {
+    &:where([data-theme="opposite"], [data-theme="opposite"] *) {
       @slot;
     }
   }
 
-  &:where(.dark, .dark *) {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
     @slot;
   }
 }
