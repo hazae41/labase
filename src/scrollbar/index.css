@@ -1,4 +1,56 @@
-@utility scrollbar-white {
+@utility scrollbar-white-opaque {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(0 0 0 / 0.1) white;
+  }
+
+  &::-webkit-scrollbar {
+    @apply bg-white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+}
+
+@utility scrollbar-black-opaque {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(255 255 255 / 0.1) black;
+  }
+
+  &::-webkit-scrollbar {
+    @apply bg-black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+}
+
+@utility scrollbar-default-opaque {
+  @apply scrollbar-white-opaque;
+
+  @variant dark {
+    @apply scrollbar-black-opaque;
+  }
+}
+
+@utility scrollbar-opposite-opaque {
+  @apply scrollbar-black-opaque;
+
+  @variant dark {
+    @apply scrollbar-white-opaque;
+  }
+}
+
+@utility scrollbar-white-transparent {
   @supports (-moz-appearance:none) {
     scrollbar-color: rgba(0 0 0 / 0.1) transparent;
   }
@@ -16,7 +68,7 @@
   }
 }
 
-@utility scrollbar-black {
+@utility scrollbar-black-transparent {
   @supports (-moz-appearance:none) {
     scrollbar-color: rgba(255 255 255 / 0.1) transparent;
   }
@@ -34,18 +86,18 @@
   }
 }
 
-@utility scrollbar-default {
-  @apply scrollbar-white;
+@utility scrollbar-default-transparent {
+  @apply scrollbar-white-transparent;
 
   @variant dark {
-    @apply scrollbar-black;
+    @apply scrollbar-black-transparent;
   }
 }
 
-@utility scrollbar-opposite {
-  @apply scrollbar-black;
+@utility scrollbar-opposite-transparent {
+  @apply scrollbar-black-transparent;
 
   @variant dark {
-    @apply scrollbar-white;
+    @apply scrollbar-white-transparent;
   }
 }

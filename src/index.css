@@ -10,12 +10,38 @@
 @import "./divide/index.css";
 @import "./scrollbar/index.css";
 
-@custom-variant dark {
-  @media (prefers-color-scheme: dark) {
-    @slot;
+@custom-variant light {
+  @media (prefers-color-scheme: light) {
+    &:not(.opposite *, .dark *) {
+      @slot;
+    }
   }
 
-  &:where([data-theme=dark], [data-theme=dark] *) {
+  @media (prefers-color-scheme: dark) {
+    &:where(.opposite *) {
+      @slot;
+    }
+  }
+
+  &:where(.light *) {
+    @slot;
+  }
+}
+
+@custom-variant dark {
+  @media (prefers-color-scheme: dark) {
+    &:not(.opposite *, .light *) {
+      @slot;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    &:where(.opposite *) {
+      @slot;
+    }
+  }
+
+  &:where(.dark *) {
     @slot;
   }
 }
@@ -27,7 +53,7 @@
   }
 
   body {
-    @apply h-full w-full text-base text-default bg-default **:scrollbar-default;
+    @apply h-full w-full text-base text-default bg-default **:scrollbar-default-transparent;
   }
 
   body {
