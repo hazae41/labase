@@ -53,7 +53,7 @@
   }
 
   body {
-    @apply h-full w-full text-base text-default bg-default **:scrollbar-default-transparent;
+    @apply h-full w-full text-base text-default bg-default **:scrollbar-default-[transparent];
   }
 
   body {
