@@ -1,71 +1,107 @@
-@import "tailwindcss/index";
-
-@import "./padding/index.css";
-@import "./margin/index.css";
-@import "./animations/index.css";
-@import "./background/index.css";
-@import "./text/index.css";
-@import "./border/index.css";
-@import "./outline/index.css";
-@import "./divide/index.css";
-@import "./scrollbar/index.css";
-
-@custom-variant light {
-  @media (prefers-color-scheme: light) {
-    &:not([data-theme="dark"], [data-theme="opposite"], [data-theme="dark"] *, [data-theme="opposite"] *) {
-      @slot;
-    }
+@utility scrollbar-light-* {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
   }
 
-  @media (prefers-color-scheme: dark) {
-    &:where([data-theme="opposite"], [data-theme="opposite"] *) {
-      @slot;
-    }
+  &::-webkit-scrollbar {
+    background-color: --value([color]);
   }
 
-  &:where([data-theme="light"], [data-theme="light"] *) {
-    @slot;
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 }
 
-@custom-variant dark {
-  @media (prefers-color-scheme: dark) {
-    &:not([data-theme="light"], [data-theme="opposite"], [data-theme="light"] *, [data-theme="opposite"] *) {
-      @slot;
-    }
+@utility scrollbar-dark-* {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(255 255 255 / 0.1) --value([color]);
   }
 
-  @media (prefers-color-scheme: light) {
-    &:where([data-theme="opposite"], [data-theme="opposite"] *) {
-      @slot;
-    }
+  &::-webkit-scrollbar {
+    background-color: --value([color]);
   }
 
-  &:where([data-theme="dark"], [data-theme="dark"] *) {
-    @slot;
+  &::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 }
 
-@layer base {
-
-  html {
-    @apply h-full w-full text-base;
+@utility scrollbar-default-* {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
   }
 
-  body {
-    @apply h-full w-full text-base text-default bg-default **:scrollbar-default-[transparent];
+  &::-webkit-scrollbar {
+    background-color: --value([color]);
   }
 
-  body {
-    font-family: ui-rounded, system-ui, sans-serif;
+  &::-webkit-scrollbar-thumb {
+    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 
-  ::selection {
-    @apply bg-default-double-contrast;
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
   }
 
-  ::backdrop {
-    @apply bg-transparent;
+  @variant dark {
+    @supports (-moz-appearance:none) {
+      scrollbar-color: rgba(255 255 255 / 0.1) --value([color]);
+    }
+
+    &::-webkit-scrollbar {
+      background-color: --value([color]);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+  }
+}
+
+@utility scrollbar-opposite-* {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: rgba(255 255 255 / 0.1) --value([color]);
   }
 
+  &::-webkit-scrollbar {
+    background-color: --value([color]);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  @variant dark {
+    @supports (-moz-appearance:none) {
+      scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
+    }
+
+    &::-webkit-scrollbar {
+      background-color: --value([color]);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+  }
 }
