@@ -9,6 +9,7 @@
 @import "./outline/index.css";
 @import "./divide/index.css";
 @import "./scrollbar/index.css";
+@import "./selection/index.css";
 
 @custom-variant light {
   @media (prefers-color-scheme: light) {
@@ -53,7 +54,7 @@
   }
 
   body {
-    @apply h-full w-full text-base text-default bg-default selection:bg-default-double-contrast **:scrollbar-default-[transparent];
+    @apply h-full w-full text-base text-default bg-default selection-default **:scrollbar-default-[transparent];
   }
 
   body {
