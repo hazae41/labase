@@ -53,19 +53,11 @@
   }
 
   body {
-    @apply h-full w-full text-base text-default bg-default **:scrollbar-default-[transparent];
+    @apply h-full w-full text-base text-default bg-default selection:bg-default-double-contrast **:scrollbar-default-[transparent];
   }
 
   body {
     font-family: ui-rounded, system-ui, sans-serif;
-  }
-
-  ::selection {
-    @apply bg-default-double-contrast;
-  }
-
-  ::backdrop {
-    @apply bg-transparent;
   }
 
 }
