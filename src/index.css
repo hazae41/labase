@@ -61,4 +61,8 @@
     font-family: ui-rounded, system-ui, sans-serif;
   }
 
+  input[type=file]::-webkit-file-upload-button {
+    display: none;
+  }
+
 }
