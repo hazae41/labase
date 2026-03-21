@@ -23,11 +23,9 @@
 }
 
 @utility border-opposite-contrast {
-  /* strong dark on light */
   @apply border-black/80;
 
   @variant dark {
-    /* strong light on dark */
     @apply border-white/90;
   }
 }
