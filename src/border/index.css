@@ -15,17 +15,21 @@
 }
 
 @utility border-default-contrast {
+  /* light on light */
   @apply border-black/10;
 
   @variant dark {
+    /* dark on dark */
     @apply border-white/20;
   }
 }
 
 @utility border-opposite-contrast {
+  /* light on dark */
   @apply border-white/80;
 
   @variant dark {
+    /* dark on light */
     @apply border-black/90;
   }
 }
