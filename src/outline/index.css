@@ -15,21 +15,17 @@
 }
 
 @utility outline-default-contrast {
-  /* light on light */
   @apply outline-black/10;
 
   @variant dark {
-    /* dark on dark */
     @apply outline-white/20;
   }
 }
 
 @utility outline-opposite-contrast {
-  /* light on dark */
-  @apply outline-white/80;
+  @apply outline-black/80;
 
   @variant dark {
-    /* dark on light */
-    @apply outline-black/90;
+    @apply outline-white/90;
   }
 }
