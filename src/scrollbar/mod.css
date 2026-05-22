@@ -35,20 +35,23 @@
 }
 
 @utility scrollbar-default-* {
-  @supports (-moz-appearance:none) {
-    scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
-  }
 
-  &::-webkit-scrollbar {
-    background-color: --value([color]);
-  }
+  @variant light {
+    @supports (-moz-appearance:none) {
+      scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
+    }
 
-  &::-webkit-scrollbar-thumb {
-    @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
-  }
+    &::-webkit-scrollbar {
+      background-color: --value([color]);
+    }
 
-  &::-webkit-scrollbar-thumb:hover {
-    @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    &::-webkit-scrollbar-thumb {
+      @apply bg-black/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
   }
 
   @variant dark {
@@ -68,23 +71,27 @@
       @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
     }
   }
+
 }
 
 @utility scrollbar-opposite-* {
-  @supports (-moz-appearance:none) {
-    scrollbar-color: rgba(255 255 255 / 0.1) --value([color]);
-  }
 
-  &::-webkit-scrollbar {
-    background-color: --value([color]);
-  }
+  @variant light {
+    @supports (-moz-appearance:none) {
+      scrollbar-color: rgba(255 255 255 / 0.1) --value([color]);
+    }
 
-  &::-webkit-scrollbar-thumb {
-    @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
-  }
+    &::-webkit-scrollbar {
+      background-color: --value([color]);
+    }
 
-  &::-webkit-scrollbar-thumb:hover {
-    @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    &::-webkit-scrollbar-thumb {
+      @apply bg-white/10 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      @apply bg-white/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+    }
   }
 
   @variant dark {
@@ -104,4 +111,5 @@
       @apply bg-black/20 rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
     }
   }
+
 }

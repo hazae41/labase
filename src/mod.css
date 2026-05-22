@@ -1,15 +1,16 @@
 @import "tailwindcss/index";
 
-@import "./padding/index.css";
-@import "./margin/index.css";
-@import "./animations/index.css";
-@import "./background/index.css";
-@import "./text/index.css";
-@import "./border/index.css";
-@import "./outline/index.css";
-@import "./divide/index.css";
-@import "./scrollbar/index.css";
-@import "./selection/index.css";
+@import "./padding/mod.css";
+@import "./margin/mod.css";
+@import "./animations/mod.css";
+@import "./background/mod.css";
+@import "./text/mod.css";
+@import "./border/mod.css";
+@import "./outline/mod.css";
+@import "./divide/mod.css";
+@import "./scrollbar/mod.css";
+@import "./scrollfade/mod.css";
+@import "./selection/mod.css";
 
 @custom-variant light {
   @media (prefers-color-scheme: light) {

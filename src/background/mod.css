@@ -3,49 +3,73 @@
 }
 
 @utility bg-default {
-  @apply bg-white;
+
+  @variant light {
+    @apply bg-white;
+  }
 
   @variant dark {
     @apply bg-black;
   }
+
 }
 
 @utility bg-opposite {
-  @apply bg-black;
+
+  @variant light {
+    @apply bg-black;
+  }
 
   @variant dark {
     @apply bg-white;
   }
+
 }
 
 @utility bg-default-contrast {
-  @apply bg-black/5;
+
+  @variant light {
+    @apply bg-black/5;
+  }
 
   @variant dark {
     @apply bg-white/10;
   }
+
 }
 
 @utility bg-opposite-contrast {
-  @apply bg-black/90;
+
+  @variant light {
+    @apply bg-black/90;
+  }
 
   @variant dark {
     @apply bg-white/95;
   }
+
 }
 
 @utility bg-default-double-contrast {
-  @apply bg-black/10;
+
+  @variant light {
+    @apply bg-black/10;
+  }
 
   @variant dark {
     @apply bg-white/20;
   }
+
 }
 
 @utility bg-opposite-double-contrast {
-  @apply bg-black/80;
+
+  @variant light {
+    @apply bg-black/80;
+  }
 
   @variant dark {
     @apply bg-white/90;
   }
+
 }

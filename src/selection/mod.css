@@ -1,6 +1,9 @@
 @utility selection-default {
-  &::selection {
-    @apply bg-black/10;
+
+  @variant light {
+    &::selection {
+      @apply bg-black/10;
+    }
   }
 
   @variant dark {
@@ -8,11 +11,15 @@
       @apply bg-white/40;
     }
   }
+
 }
 
 @utility selection-opposite {
-  &::selection {
-    @apply bg-white/40;
+
+  @variant light {
+    &::selection {
+      @apply bg-white/40;
+    }
   }
 
   @variant dark {
@@ -20,4 +27,5 @@
       @apply bg-black/10;
     }
   }
+
 }

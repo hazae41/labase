@@ -16,7 +16,7 @@ npm i @hazae41/labase
 ## Setup
 
 ```css
-@import "../node_modules/@hazae41/labase/src/index.css";
+@import "../node_modules/@hazae41/labase/src/mod.css";
 ```
 
 ## Usage
