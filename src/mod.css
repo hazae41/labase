@@ -87,11 +87,11 @@
 @layer base {
 
   html {
-    @apply h-full w-full text-base;
+    @apply h-full w-full text-base text-default bg-default selection-default **:scrollbar-default-[transparent];
   }
 
   body {
-    @apply h-full w-full text-base text-default bg-default selection-default **:scrollbar-default-[transparent];
+    @apply h-full w-full;
   }
 
   body {
