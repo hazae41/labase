@@ -1,3 +1,21 @@
+@utility scrollbar-transparent {
+  @supports (-moz-appearance:none) {
+    scrollbar-color: transparent transparent;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    @apply bg-transparent rounded-[10px] border-[3px] border-solid border-transparent bg-clip-padding;
+  }
+}
+
 @utility scrollbar-light-* {
   @supports (-moz-appearance:none) {
     scrollbar-color: rgba(0 0 0 / 0.1) --value([color]);
