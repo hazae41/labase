@@ -25,6 +25,17 @@ export function ContrastAnchor(props: JSX.IntrinsicElements["a"]) {
   </a>
 }
 
+export function WideOppositeAnchor(props: JSX.IntrinsicElements["a"]) {
+  const { children, ...rest } = props
+
+  return <a className="flex-1 group po-2 bg-opposite text-opposite rounded-xl hover:bg-opposite-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-opposite inert:opacity-50"
+    {...rest}>
+    <Clicker>
+      {children}
+    </Clicker>
+  </a>
+}
+
 export function WideContrastAnchor(props: JSX.IntrinsicElements["a"]) {
   const { children, ...rest } = props
 
