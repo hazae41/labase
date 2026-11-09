@@ -6,9 +6,20 @@
   "repository": "github:hazae41/labase",
   "author": "hazae41",
   "license": "MIT",
+  "scripts": {
+    "examine": "deno lint ./src && deno check ./src && deno test ./src",
+    "prepack:css": "cp ./src/mod.css ./out && cp -R ./src/css ./out/css",
+    "prepack": "rm -rf ./out && tsc && tscousin && npm run prepack:css"
+  },
   "files": [
-    "./src"
+    "./out"
   ],
+  "exports": {
+    ".": {
+      "types": "./out/mod.d.ts",
+      "import": "./out/mod.js"
+    }
+  },
   "keywords": [
     "monochrome",
     "css",
@@ -17,7 +28,16 @@
     "design",
     "style"
   ],
-  "dependencies": {
-    "tailwindcss": "^4.1.16"
+  "devDependencies": {
+    "@hazae41/phobos": "^2.0.16",
+    "@hazae41/tscousin": "^1.0.28",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "tailwindcss": ">=4.0.0"
   }
 }

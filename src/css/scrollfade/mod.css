@@ -1,0 +1,95 @@
+@property --scrollfade-s {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --scrollfade-e {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
+
+@keyframes scrollfade {
+  0% {
+    --scrollfade-s: 0;
+  }
+
+  10%,
+  100% {
+    --scrollfade-s: 4rem;
+  }
+
+  0%,
+  90% {
+    --scrollfade-e: 4rem;
+  }
+
+  100% {
+    --scrollfade-e: 0;
+  }
+}
+
+@utility scrollfade-x-default {
+  animation: scrollfade;
+  animation-timeline: --scrollfade;
+  scroll-timeline: --scrollfade x;
+
+  @variant light {
+    mask-image: linear-gradient(to right, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+
+  @variant dark {
+    mask-image: linear-gradient(to right, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+}
+
+@utility scrollfade-x-opposite {
+  animation: scrollfade;
+  animation-timeline: --scrollfade;
+  scroll-timeline: --scrollfade x;
+
+  @variant light {
+    mask-image: linear-gradient(to right, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+
+  @variant dark {
+    mask-image: linear-gradient(to right, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+}
+
+@utility scrollfade-y-default {
+  animation: scrollfade;
+  animation-timeline: --scrollfade;
+  scroll-timeline: --scrollfade y;
+
+  @variant light {
+    mask-image: linear-gradient(to bottom, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+
+  @variant dark {
+    mask-image: linear-gradient(to bottom, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+}
+
+@utility scrollfade-y-opposite {
+  animation: scrollfade;
+  animation-timeline: --scrollfade;
+  scroll-timeline: --scrollfade y;
+
+  @variant light {
+    mask-image: linear-gradient(to bottom, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, white var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+
+  @variant dark {
+    mask-image: linear-gradient(to bottom, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black var(--scrollfade-s) calc(100% - var(--scrollfade-e)), transparent);
+  }
+}
