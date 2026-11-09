@@ -1,4 +1,0 @@
-@utility mo-* {
-  margin-inline: calc(var(--spacing) * --value(integer) * 2);
-  margin-block: calc(var(--spacing) * --value(integer));
-}
