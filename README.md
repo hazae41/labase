@@ -1,6 +1,6 @@
 # LaBase
 
-The Tailwind framework for monochrome apps
+The React + Tailwind framework for monochrome apps
 
 ```bash
 npm i @hazae41/labase
@@ -16,7 +16,7 @@ npm i @hazae41/labase
 ## Setup
 
 ```css
-@import "../node_modules/@hazae41/labase/src/mod.css";
+@import "../node_modules/@hazae41/labase/out/mod.css";
 ```
 
 ## Usage
