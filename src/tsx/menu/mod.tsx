@@ -13,7 +13,7 @@ export function Menu(props: { children?: ReactNode }) {
 export function MenuAnchor(props: JSX.IntrinsicElements["a"]) {
   const { children, ...rest } = props
 
-  return <a className="group flex-1 po-2 rounded-xl flex items-center justify-start gap-4 focus-visible:outline-none whitespace-nowrap hover:bg-default-double-contrast focus-visible:bg-default-double-contrast inert:opacity-50"
+  return <a className="group flex-1 po-2 rounded-xl flex items-center justify-start gap-4 whitespace-nowrap cursor-pointer hover:bg-default-double-contrast focus-visible:outline-none focus-visible:bg-default-double-contrast inert:opacity-50"
     {...rest}>
     {children}
   </a>
@@ -22,7 +22,7 @@ export function MenuAnchor(props: JSX.IntrinsicElements["a"]) {
 export function MenuButton(props: JSX.IntrinsicElements["button"]) {
   const { children, ...rest } = props
 
-  return <button className="group flex-1 po-2 rounded-xl flex items-center justify-start gap-4 focus-visible:outline-none whitespace-nowrap hover:bg-default-double-contrast focus-visible:bg-default-double-contrast inert:opacity-50"
+  return <button className="group flex-1 po-2 rounded-xl flex items-center justify-start gap-4 whitespace-nowrap enabled:cursor-pointer enabled:hover:bg-default-double-contrast focus-visible:outline-none focus-visible:bg-default-double-contrast disabled:opacity-50"
     {...rest}>
     {children}
   </button>

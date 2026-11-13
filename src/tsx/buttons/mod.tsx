@@ -6,7 +6,7 @@ React;
 export function OppositeButton(props: JSX.IntrinsicElements["button"]) {
   const { children, ...rest } = props
 
-  return <button className="group po-2 bg-opposite text-opposite rounded-xl cursor-pointer hover:bg-opposite-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-opposite inert:opacity-50"
+  return <button className="group po-2 bg-opposite text-opposite rounded-xl enabled:cursor-pointer enabled:hover:bg-opposite-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-opposite disabled:opacity-50"
     {...rest}>
     <Clicker>
       {children}
@@ -17,7 +17,7 @@ export function OppositeButton(props: JSX.IntrinsicElements["button"]) {
 export function ContrastButton(props: JSX.IntrinsicElements["button"]) {
   const { children, ...rest } = props
 
-  return <button className="group po-2 bg-default-contrast rounded-xl cursor-pointer hover:bg-default-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-default-contrast inert:opacity-50"
+  return <button className="group po-2 bg-default-contrast rounded-xl enabled:cursor-pointer enabled:hover:bg-default-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-default-contrast disabled:opacity-50"
     {...rest}>
     <Clicker>
       {children}
@@ -28,7 +28,7 @@ export function ContrastButton(props: JSX.IntrinsicElements["button"]) {
 export function WideOppositeButton(props: JSX.IntrinsicElements["button"]) {
   const { children, ...rest } = props
 
-  return <button className="flex-1 group po-2 bg-opposite text-opposite rounded-xl cursor-pointer hover:bg-opposite-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-opposite inert:opacity-50"
+  return <button className="flex-1 group po-2 bg-opposite text-opposite rounded-xl enabled:cursor-pointer enabled:hover:bg-opposite-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-opposite disabled:opacity-50"
     {...rest}>
     <Clicker>
       {children}
@@ -39,7 +39,7 @@ export function WideOppositeButton(props: JSX.IntrinsicElements["button"]) {
 export function WideContrastButton(props: JSX.IntrinsicElements["button"]) {
   const { children, ...rest } = props
 
-  return <button className="flex-1 group po-2 bg-default-contrast rounded-xl cursor-pointer hover:bg-default-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-default-contrast inert:opacity-50"
+  return <button className="flex-1 group po-2 bg-default-contrast rounded-xl enabled:cursor-pointer enabled:hover:bg-default-double-contrast focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-default-contrast disabled:opacity-50"
     {...rest}>
     <Clicker>
       {children}
